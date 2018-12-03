@@ -1,7 +1,7 @@
-Calculator
+#Calculator
 ==========
 
-Description
+#Description
 -----------
 
 - "Our pretend company" calculator can be used to perform mathematical operations like addition, subtraction,
@@ -10,13 +10,13 @@ multiplication, division, square, cube, square root, cube root and brackets.
 - User can use AC button to clear all values from the result area.
 - User can use CE button to remove the last entered value.
 
-How to use the Calculator application
+#How to use the Calculator application
 -------------------------------------
 
 -- Calculator app can be accessed in brower by opening the file ~/Calculator/src/calculator.html
 
 
-How to execute the TEST CASES for the Calculator application
+#How to execute the TEST CASES for the Calculator application
 -------------------------------------------------------------
 
 -- Jasmine is used while performing BDD.
