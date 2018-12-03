@@ -1,0 +1,24 @@
+Calculator
+==========
+
+Description
+-----------
+
+- "Our pretend company" calculator can be used to perform mathematical operations like addition, subtraction,
+multiplication, division, square, cube, square root, cube root and brackets.
+- User can choose the operands and operator and click on = for evaluation.
+- User can use AC button to clear all values from the result area.
+- User can use CE button to remove the last entered value.
+
+How to use the Calculator application
+-------------------------------------
+
+-- Calculator app can be accessed in brower by opening the file ~/Calculator/src/calculator.html
+
+
+How to execute the TEST CASES for the Calculator application
+-------------------------------------------------------------
+
+-- Jasmine is used while performing BDD.
+-- The unit testing specs for calculator are present in the location ~/Calculator/spec/CalculatorSpec.js
+-- The test cases can be executed and report can be viewed by opening the file ~/Calculator/SpecRunner.html

@@ -1,0 +1,59 @@
+<html ng-app="calculatorApp">
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/calculator.css">
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.js"></script>
+    </head>
+    <body>
+        <div class="calculator" ng-controller="CalculatorController">
+            <div class="statement" id="statement" align="right" ng-bind-html="statement">
+                {{statement}}
+            </div>
+
+            <input id="display" type="text" class="calculator-screen" disabled ng-model="result"/>
+
+            <div class="calculator-keys">
+
+                <button id="add" type="button" class="operator" value="+" ng-click="evaluate($event.currentTarget.value)">+</button>
+                <button id="subtract" type="button" class="operator" value="-" ng-click="evaluate($event.currentTarget.value)">-</button>
+                <button id="multiply" type="button" class="operator" value="*" ng-click="evaluate($event.currentTarget.value)">&times;</button>
+                <button id="divide" type="button" class="operator" value="/" ng-click="evaluate($event.currentTarget.value)">&divide;</button>
+                <button id="leftbracket" type="button" class="operator" value="(" ng-click="evaluate($event.currentTarget.value)">(</button>
+
+
+
+                <button id="square" type="button" class="operator" value="x^2" ng-click="evaluate($event.currentTarget.value)">x<sup>2</sup></button>
+                <button id="seven" type="button" value="7" ng-click="evaluate($event.currentTarget.value)">7</button>
+                <button id="eight" type="button" value="8" ng-click="evaluate($event.currentTarget.value)">8</button>
+                <button id="nine" type="button" value="9" ng-click="evaluate($event.currentTarget.value)">9</button>
+                <button id="rightbracket" type="button" class="operator" value=")" ng-click="evaluate($event.currentTarget.value)">)</button>
+
+
+                <button id="cube" type="button" class="operator" value="x^3" ng-click="evaluate($event.currentTarget.value)">x<sup>3</sup></button>
+                <button id="four" type="button" value="4" ng-click="evaluate($event.currentTarget.value)">4</button>
+                <button id="five" type="button" value="5" ng-click="evaluate($event.currentTarget.value)">5</button>
+                <button id="six" type="button" value="6" ng-click="evaluate($event.currentTarget.value)">6</button>
+                <button id="CE" type="button" class="all-clear" value="CE" ng-click="evaluate($event.currentTarget.value)">CE</button>
+
+
+                <button id="squareroot" type="button" class="operator" value="squareroot" ng-click="evaluate($event.currentTarget.value)">&Sqrt;</button>
+                <button id="one" type="button" value="1" ng-click="evaluate($event.currentTarget.value)">1</button>
+                <button id="two" type="button" value="2" ng-click="evaluate($event.currentTarget.value)">2</button>
+                <button id="three" type="button" value="3" ng-click="evaluate($event.currentTarget.value)">3</button>
+                <button id="clear" type="button" class="all-clear" value="clear" ng-click="evaluate($event.currentTarget.value)">AC</button>
+
+
+                <button id="cuberoot" type="button" class="operator" value="cuberoot" ng-click="evaluate($event.currentTarget.value)">&#8731;</button>
+                <button id="zero" type="button" value="0" ng-click="evaluate($event.currentTarget.value)">0</button>
+                <button id="decimal" type="button" class="decimal" value="." ng-click="evaluate($event.currentTarget.value)">.</button>
+                <button id="equal" type="button" class="equal-sign" value="="
+                        ng-click="evaluate($event.currentTarget.value)">=</button>
+            </div>
+        </div>
+        <script src="js/calculator.js"></script>
+        <script src="js/controllers/calculatorcontrollers.js"></script>
+        <script src="js/services/validation.js"></script>
+        <script src="js/services/utilities.js"></script>
+        <script src="js/services/calcservice.js"></script>
+    </body>
+</html>
